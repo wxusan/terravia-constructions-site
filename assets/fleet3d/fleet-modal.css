@@ -1,0 +1,61 @@
+/* Detailed modal styles only. The existing card styling is unchanged. */
+html{scrollbar-gutter:stable}
+.f3-modal-open{overflow:hidden!important}
+.f3-dialog{--f3-ink:#222d26;--f3-muted:#677163;--f3-line:#ccd2c4;box-sizing:border-box;position:fixed;inset:0;margin:auto;width:min(1580px,96vw);height:min(980px,94dvh);max-width:100vw;max-height:100dvh;padding:0;border:1px solid #bcc4b5;border-radius:12px;background:#edf0e6;color:var(--f3-ink);font-family:'Inter Tight',Arial,sans-serif;box-shadow:0 25px 130px #0009;overflow:hidden;color-scheme:light}
+.f3-dialog::backdrop{background:#02070ed9;backdrop-filter:blur(7px)}
+.f3-dialog:not([open]){display:none}
+.f3-dialog :is(button,input,a){font:inherit}
+.f3-dialog button{color:var(--f3-ink);cursor:pointer;transition:background .15s,border-color .15s}
+.f3-dialog button:disabled{opacity:.35;cursor:default}
+.f3-dialog button:focus-visible,.f3-dialog a:focus-visible,.f3-dialog input:focus-visible,.f3-viewport:focus-visible{outline:2px solid #4b6a38;outline-offset:3px}
+.f3-dialog button:hover:not(:disabled){background:#d7dfcc}
+.f3-dialog [hidden]{display:none!important}
+.f3-shell{display:flex;flex-direction:column;height:100%;min-height:0}
+.f3-header{display:flex;justify-content:space-between;gap:20px;padding:25px 30px 18px;flex:none}
+.f3-kicker{margin:0 0 8px;font-size:10px;letter-spacing:.16em;line-height:1.4;text-transform:uppercase;color:var(--f3-muted)}
+.f3-header h2{margin:0;font-size:clamp(26px,3.2vw,51px);font-weight:600;letter-spacing:-.04em;line-height:1.06;color:var(--f3-ink)}
+.f3-actions{display:flex;align-items:flex-start;gap:8px;flex-shrink:0}
+.f3-actions button{display:grid;place-items:center;width:44px;height:44px;font:25px/1 Arial,sans-serif;background:#f7f9f2;border:1px solid var(--f3-line);border-radius:9px}
+.f3-actions [data-action=close]{font-size:30px}
+.f3-viewbar{display:flex;align-items:center;gap:24px;padding:0 30px 18px;border-bottom:1px solid var(--f3-line);flex:none}
+.f3-modes{display:flex;border:1px solid var(--f3-line);padding:3px;gap:3px;border-radius:8px;background:#f7f9f2}
+.f3-modes button{font-size:12px;line-height:1.2;background:transparent;border:0;padding:11px 17px;border-radius:5px;white-space:nowrap}
+.f3-dialog button[aria-pressed=true]{background:#ccd8bd;border-color:#b0c299}
+.f3-slider-label{display:flex;align-items:center;gap:12px;margin:0;font-size:11px;color:var(--f3-muted)}
+.f3-slider-label input{accent-color:#577247;width:120px}
+.f3-main{display:grid;grid-template-columns:minmax(0,1fr) 290px;flex:1;min-height:0}
+.f3-stage{position:relative;background:radial-gradient(ellipse at 45% 30%,#f7f8f1 0%,#e8eae1 78%);min-height:0;overflow:hidden}
+.f3-viewport{position:absolute;inset:0;touch-action:none}
+.f3-viewport canvas{display:block;touch-action:none}
+.f3-angle{position:absolute;top:18px;right:20px;display:flex;flex-direction:column;gap:5px}
+.f3-angle button{min-width:113px;min-height:33px;border:1px solid var(--f3-line);border-radius:5px;background:#f7f9f2e6;padding:6px 12px;font-size:10px;text-transform:uppercase;letter-spacing:.045em}
+.f3-stage-footer{position:absolute;bottom:17px;left:25px;right:20px;display:flex;justify-content:space-between;gap:14px;font-size:10px;color:var(--f3-muted);pointer-events:none}
+#f3-mode-label{letter-spacing:.11em;text-transform:uppercase;flex-shrink:0}
+#f3-controls{text-align:right}
+.f3-tooltip{position:absolute;max-width:220px;border:1px solid #52644844;border-radius:5px;padding:8px 11px;background:#f8faf2f2;color:#253722;box-shadow:0 4px 15px #29391c1a;font-size:11px;pointer-events:none}
+.f3-inspector{min-height:0;overflow-y:auto;overscroll-behavior:contain;border-left:1px solid var(--f3-line);padding:22px 23px;background:#f4f6ee;scrollbar-width:thin;scrollbar-color:#bac6ac transparent}
+.f3-inspector-over{font-size:9px;letter-spacing:.15em;color:var(--f3-muted);margin:0 0 10px}
+.f3-inspector h3{font-size:21px;line-height:1.2;font-weight:500;letter-spacing:-.025em;margin:0 0 11px}
+#f3-part-description{min-height:76px;font-size:12px;line-height:1.55;color:#646e60;margin:0 0 14px}
+.f3-part-actions{display:flex;gap:6px;margin-bottom:26px}
+.f3-part-actions button{flex:1;border:1px solid var(--f3-line);background:transparent;border-radius:5px;padding:9px 5px;font-size:10px}
+.f3-list-head{display:flex;justify-content:space-between;border-bottom:1px solid var(--f3-line);padding:0 0 10px;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.f3-assemblies{display:flex;flex-direction:column}
+.f3-assemblies button{display:flex;gap:12px;align-items:center;text-align:left;padding:11px 5px;border:0;border-bottom:1px solid #d5dacd9e;border-radius:0;background:transparent;line-height:1.35;font-size:11px}
+.f3-assemblies button>span:first-child{font-size:9px;color:#7a8972;font-variant-numeric:tabular-nums;flex-shrink:0}
+.f3-assemblies button.is-selected{background:#dbe5ce}
+.f3-accuracy{font-size:10px;line-height:1.5;color:#77816e;margin:21px 0 12px;border-left:2px solid #bac8aa;padding-left:10px}
+.f3-download{font-size:11px;color:#3b5730;text-decoration:none;border-bottom:1px solid #80936e;padding-bottom:2px}
+.f3-footer{display:flex;justify-content:space-between;gap:20px;padding:11px 25px;border-top:1px solid var(--f3-line);font-size:9px;letter-spacing:.09em;color:#758069;flex:none}
+.f3-footer span:last-child{letter-spacing:0;text-align:right}
+.f3-load{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;background:#ecefe6eb;padding:25px;text-align:center;font-size:14px}
+.f3-spinner{width:30px;height:30px;border:2px solid #ccd7c1;border-top-color:#567348;border-radius:50%;animation:f3spin .8s linear infinite}
+.f3-retry{padding:10px 18px;background:#d2dfc6;border:1px solid #aaba9b;border-radius:6px}
+.f3-dialog:fullscreen{width:100vw;height:100dvh;border-radius:0;border:0}
+/* Reserve inspector text space: hovering a long part name must not move the
+   list under the pointer and create a hover/leave layout feedback loop. */
+.f3-inspector h3{height:3.6em;overflow:auto}
+#f3-part-description{height:104px;overflow:auto}
+@media(max-width:1000px){.f3-main{grid-template-columns:minmax(0,1fr) 240px}.f3-inspector{padding:20px 17px}.f3-header{padding:20px 22px 17px}.f3-viewbar{padding:0 22px 15px}.f3-angle{right:12px}.f3-stage-footer{flex-direction:column;left:15px;bottom:12px;gap:5px}#f3-controls{text-align:left}.f3-modes button{padding:10px 12px}.f3-slider-label{gap:5px}.f3-slider-label input{width:80px}}
+@media(max-width:700px){.f3-dialog{width:100vw;height:100dvh;max-height:100dvh;border:0;border-radius:0;overflow-y:auto;overscroll-behavior:contain}.f3-shell{height:auto;min-height:100%;}.f3-header{gap:9px;padding:18px 14px 14px;position:sticky;top:0;background:#edf0e6;z-index:5}.f3-kicker{font-size:8px;max-width:240px;margin-bottom:6px}.f3-header h2{font-size:26px;max-width:250px;line-height:1.07}.f3-actions{gap:5px}.f3-actions button{width:36px;height:38px;border-radius:6px;font-size:23px}.f3-actions [data-action=full]{display:none}.f3-viewbar{padding:0 12px 12px;gap:8px;align-items:flex-start;flex-wrap:wrap}.f3-modes{width:100%;justify-content:stretch;gap:2px}.f3-modes button{flex:1;font-size:11px;padding:12px 7px}.f3-slider-label{padding-left:7px;width:100%;justify-content:space-between}.f3-slider-label input{width:160px}.f3-main{display:block}.f3-stage{height:51dvh;min-height:310px;max-height:550px}.f3-angle{top:10px;left:12px;right:12px;flex-direction:row;justify-content:space-between;gap:4px}.f3-angle button{flex:1;min-width:0;font-size:8px;padding:8px 4px;min-height:34px}.f3-stage-footer{font-size:9px;bottom:9px;left:13px}.f3-tooltip{display:none}.f3-inspector{overflow:visible;border-left:0;border-top:1px solid var(--f3-line);padding:20px}.f3-inspector h3{font-size:23px}#f3-part-description{min-height:0;font-size:13px}.f3-part-actions button{font-size:12px;padding:12px}.f3-assemblies{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.f3-assemblies button{font-size:11px;min-height:46px}.f3-accuracy{font-size:11px}.f3-footer{font-size:8px;padding:13px 16px}.f3-footer span:first-child{max-width:100px}.f3-footer span:last-child{max-width:210px}}
+@media(prefers-reduced-motion:reduce){.f3-dialog button{transition:none!important}.f3-spinner{animation:none}}
