@@ -1,6 +1,6 @@
 # Terravia Constructions website
 
-Static website for Terravia Constructions, including the interactive fleet viewer and all 14 3D machine models.
+Static website for Terravia Constructions, including the interactive fleet viewer, all 14 3D machine models, and the company registration certificate linked in the footer.
 
 ## Run locally
 

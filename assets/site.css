@@ -2380,6 +2380,8 @@ html.reduced .form-pre[open] pre{animation:none}
 
 .foot-disc{margin-top:22px;max-width:70ch;font-size:var(--fs-small);line-height:1.55;color:var(--paper-3)}
 .foot-copy{margin-top:10px;font-size:var(--fs-small);color:var(--paper-3)}
+.foot-document{color:var(--paper-2);text-decoration:underline;text-decoration-color:var(--hair-2);text-underline-offset:.2em}
+.foot-document:hover{color:var(--paper)}
 
 /* no JS / site.js never ran: the switch cannot work — leave it out (as the header does) */
 html:not(.js) .foot .lang,html.tv-fallback .foot .lang{display:none}
