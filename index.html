@@ -659,7 +659,7 @@ html:is(.intro-full,.intro-short):not(.intro-hold) :is(#top [data-lockup],#top .
      (a real <button aria-expanded>, stretched over the row). Expanded panels are open in the HTML on purpose:
      without JS every scope sentence is readable; with JS (html.js) 30-objects.js collapses them before paint.
      Silent fields (years / customer / volume) are empty launch tokens, hidden in the HTML as well (no-JS parity).
-     Photos: row 06 = the one real photograph (vostochny.jpg, ≤ 520 px); every other row = a SILENT 16:9 slot.
+     Photos: rows 01–04 = supplied airport photographs; row 06 = vostochny.jpg; other rows = SILENT 16:9 slots.
      Every image alt = the object name (ARCHITECTURE §5); the row-06 caption adds «Вид с воздуха» for sighted readers only.
      =================================================================================================== -->
 <section class="sec objects" id="objects" aria-labelledby="objectsH">
@@ -710,10 +710,16 @@ html:is(.intro-full,.intro-short):not(.intro-hold) :is(#top [data-lockup],#top .
               <div data-i-wrap hidden data-i-hid><dt data-i="objects.f.customer">Заказчик</dt><dd data-i="objects.o1.customer"></dd></div>
               <div data-i-wrap hidden data-i-hid><dt data-i="objects.f.volume">Объём</dt><dd data-i="objects.o1.volume"></dd></div>
             </dl>
-            <figure class="photo lr-ph" data-slot="silent" data-src="assets/img/projects/termez.jpg" data-ratio="16x9" hidden>
-              <div class="photo-box"><img alt="Аэропорт Термез" data-i-attr="alt:objects.o1.title" width="1600" height="900" loading="lazy" decoding="async"></div>
-              <figcaption class="photo-cap" data-i="objects.o1.title">Аэропорт Термез</figcaption>
-            </figure>
+            <div class="lr-gallery">
+              <figure class="photo lr-ph lr-ph--airport" data-slot="real" data-src="assets/img/projects/termez-visit.png">
+                <div class="photo-box"><img src="assets/img/projects/termez-visit.png" alt="Аэропорт Термез" data-i-attr="alt:objects.o1.title" width="547" height="365" loading="lazy" decoding="async"></div>
+                <figcaption class="photo-cap" data-i="objects.o1.title">Аэропорт Термез</figcaption>
+              </figure>
+              <figure class="photo lr-ph lr-ph--airport" data-slot="real" data-src="assets/img/projects/termez-terminal.png">
+                <div class="photo-box"><img src="assets/img/projects/termez-terminal.png" alt="Аэропорт Термез" data-i-attr="alt:objects.o1.title" width="500" height="281" loading="lazy" decoding="async"></div>
+                <figcaption class="photo-cap" data-i="objects.o1.title">Аэропорт Термез</figcaption>
+              </figure>
+            </div>
           </div></div>
         </li>
 
@@ -735,8 +741,8 @@ html:is(.intro-full,.intro-short):not(.intro-hold) :is(#top [data-lockup],#top .
               <div data-i-wrap hidden data-i-hid><dt data-i="objects.f.customer">Заказчик</dt><dd data-i="objects.o2.customer"></dd></div>
               <div data-i-wrap hidden data-i-hid><dt data-i="objects.f.volume">Объём</dt><dd data-i="objects.o2.volume"></dd></div>
             </dl>
-            <figure class="photo lr-ph" data-slot="silent" data-src="assets/img/projects/tashkent-rwy-1.jpg" data-ratio="16x9" hidden>
-              <div class="photo-box"><img alt="Международный аэропорт имени Ислама Каримова, Ташкент" data-i-attr="alt:objects.o2.title" width="1600" height="900" loading="lazy" decoding="async"></div>
+            <figure class="photo lr-ph lr-ph--airport" data-slot="real" data-src="assets/img/projects/tashkent-terminal.png">
+              <div class="photo-box"><img src="assets/img/projects/tashkent-terminal.png" alt="Международный аэропорт имени Ислама Каримова, Ташкент" data-i-attr="alt:objects.o2.title" width="1600" height="1071" loading="lazy" decoding="async"></div>
               <figcaption class="photo-cap" data-i="objects.o2.title">Международный аэропорт имени Ислама Каримова, Ташкент</figcaption>
             </figure>
           </div></div>
@@ -760,8 +766,8 @@ html:is(.intro-full,.intro-short):not(.intro-hold) :is(#top [data-lockup],#top .
               <div data-i-wrap hidden data-i-hid><dt data-i="objects.f.customer">Заказчик</dt><dd data-i="objects.o3.customer"></dd></div>
               <div data-i-wrap hidden data-i-hid><dt data-i="objects.f.volume">Объём</dt><dd data-i="objects.o3.volume"></dd></div>
             </dl>
-            <figure class="photo lr-ph" data-slot="silent" data-src="assets/img/projects/tashkent-rwy-2.jpg" data-ratio="16x9" hidden>
-              <div class="photo-box"><img alt="Международный аэропорт «Ташкент»" data-i-attr="alt:objects.o3.title" width="1600" height="900" loading="lazy" decoding="async"></div>
+            <figure class="photo lr-ph lr-ph--airport" data-slot="real" data-src="assets/img/projects/tashkent-terminal.png">
+              <div class="photo-box"><img src="assets/img/projects/tashkent-terminal.png" alt="Международный аэропорт «Ташкент»" data-i-attr="alt:objects.o3.title" width="1600" height="1071" loading="lazy" decoding="async"></div>
               <figcaption class="photo-cap" data-i="objects.o3.title">Международный аэропорт «Ташкент»</figcaption>
             </figure>
           </div></div>
@@ -785,10 +791,16 @@ html:is(.intro-full,.intro-short):not(.intro-hold) :is(#top [data-lockup],#top .
               <div data-i-wrap hidden data-i-hid><dt data-i="objects.f.customer">Заказчик</dt><dd data-i="objects.o4.customer"></dd></div>
               <div data-i-wrap hidden data-i-hid><dt data-i="objects.f.volume">Объём</dt><dd data-i="objects.o4.volume"></dd></div>
             </dl>
-            <figure class="photo lr-ph" data-slot="silent" data-src="assets/img/projects/andijan.jpg" data-ratio="16x9" hidden>
-              <div class="photo-box"><img alt="Международный аэропорт Андижан" data-i-attr="alt:objects.o4.title" width="1600" height="900" loading="lazy" decoding="async"></div>
-              <figcaption class="photo-cap" data-i="objects.o4.title">Международный аэропорт Андижан</figcaption>
-            </figure>
+            <div class="lr-gallery">
+              <figure class="photo lr-ph lr-ph--airport" data-slot="real" data-src="assets/img/projects/andijan-terminal.png">
+                <div class="photo-box"><img src="assets/img/projects/andijan-terminal.png" alt="Международный аэропорт Андижан" data-i-attr="alt:objects.o4.title" width="500" height="333" loading="lazy" decoding="async"></div>
+                <figcaption class="photo-cap" data-i="objects.o4.title">Международный аэропорт Андижан</figcaption>
+              </figure>
+              <figure class="photo lr-ph lr-ph--airport" data-slot="real" data-src="assets/img/projects/andijan-visit.png">
+                <div class="photo-box"><img src="assets/img/projects/andijan-visit.png" alt="Международный аэропорт Андижан" data-i-attr="alt:objects.o4.title" width="678" height="452" loading="lazy" decoding="async"></div>
+                <figcaption class="photo-cap" data-i="objects.o4.title">Международный аэропорт Андижан</figcaption>
+              </figure>
+            </div>
           </div></div>
         </li>
 

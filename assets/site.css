@@ -1393,6 +1393,11 @@ html.js:not(.tv-fallback) .lr:not(.is-open):not(.is-closing)>.lr-more,.objects.i
 .lr-dl dt{font:500 var(--fs-micro-s)/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--paper-3)}
 .lr-dl dd{margin-top:6px;font:300 17px/1.35 var(--serif);color:var(--paper)}
 .lr-ph{margin-top:20px;max-width:640px}
+.lr-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start;max-width:900px;margin-top:20px}
+.lr-gallery .lr-ph{margin-top:0;max-width:none}
+.lr-ph--airport .photo-box{aspect-ratio:auto}
+.lr-ph--airport .photo-box img{position:relative;inset:auto;display:block;height:auto}
+@media (max-width:760px){.lr-gallery{grid-template-columns:minmax(0,1fr)}}
 #obj-06 .lr-ph{max-width:520px}                                                    /* 680 px source (§5.11 limit) */
 
 /* no JS, or site.js has not run by the 7 s safety net (tv-fallback without .is-live): every panel stays open as ordinary
