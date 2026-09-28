@@ -17,5 +17,5 @@ window.TV_CFG = {
   inn:          '',   // ИНН для «Сводки»
   legalAddress: '',   // юридический адрес для «Сводки» (по-русски)
   legalAddressUz: '', // юридический адрес по-узбекски (если пусто — показывается русский)
-  domain:       'https://terravia-constructions-site.vercel.app' // адрес сайта после публикации (обновите, если сменится домен)
+  domain:       (/^(www\.)?terraviaconstructions\.uz$/.test(window.location.hostname) ? window.location.origin : 'https://terravia-constructions.vercel.app') // адрес сайта после публикации (обновите, если сменится домен)
 };
