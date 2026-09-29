@@ -2094,6 +2094,8 @@ html.low .fleet::before{display:none}
 .now-st{display:flex}                                           /* the tag without a line-box strut under it */
 .now-t{margin-top:14px;text-wrap:balance}
 .now-x{margin-top:10px}
+.now-credit{margin-top:10px;font:500 11px/1.4 var(--sans);letter-spacing:.04em;color:var(--paper-3)}
+.now-credit a{text-decoration:underline;text-underline-offset:3px}
 .now-strip{margin-top:auto;padding-top:18px}                    /* silent thumbnails sit on the card's floor */
 .now-strip .strip-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 
